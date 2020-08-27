@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header id="nav-header"> CSS Documentation</header>
+
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+    <a href="#Modules" class="nav-link">Modules</a>
+    <a href="#Solving_common_CSS_problems" class="nav-link">Solving common CSS problems</a>
+    <a href="#CSS_Syntax" class="nav-link">CSS Syntax</a>
+    <a href="#See_also" class="nav-link">See also</a>
+
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Cascading Stylesheets — or CSS — is the first technology you should start learning after HTML. While HTML is used to define the structure and semantics of your content, CSS is used to style it and lay it out. For example, you can use CSS to
+        alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+    </section>
+    <section class="main-section" id="Prerequisites">
+      <header>Prerequisites</header>
+      <p>You should learn the basics of HTML before attempting any CSS. We recommend that you work through our Introduction to HTML module first. In that module, you will learn about:</p>
+      <ul>
+        <li>CSS, starting with the Introduction to CSS module</li>
+        <li>More advanced HTML modules</li>
+        <li>JavaScript, and how to use it to add dynamic functionality to web pages</li>
+      </ul>
+      <p>Once you understand the fundamentals of HTML, we recommend that you learn HTML and CSS at the same time, moving back and forth between the two topics. This is because HTML is far more interesting and much more fun to learn when you apply
+        CSS, and you can't really learn CSS without knowing HTML.</p>
+      <p>Before starting this topic, you should also be familiar with using computers and using the web passively (i.e., just looking at it, consuming the content). You should have a basic work environment set up as detailed in Installing basic
+        software and understand how to create and manage files, as detailed in Dealing with files — both of which are parts of our Getting started with the web complete beginner's module.</p>
+
+      <p>It is recommended that you work through Getting started with the web before proceeding with this topic. However, doing so isn't absolutely necessary as much of what is covered in the CSS basics article is also covered in our CSS first steps
+        module, albeit in a lot more detail.</p>
+    </section>
+    <section class="main-section" id="Modules">
+      <header>Modules</header>
+      <p>This topic contains the following modules, in a suggested order for working through them. You should definitely start with the first one.</p>
+      <h3>CSS first steps</h3>
+      <p class="sub-para"> CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative
+        features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+      <h3> CSS building blocks
+        This module carries</h3>
+      <p class="sub-para">This module carries on where CSS first steps left off — now you've gained familiarity with the language and its syntax, and got some basic experience with using it, its time to dive a bit deeper. This module looks at the
+        cascade and inheritance, all the selector types we have available, units, sizing, styling backgrounds and borders, debugging, and lots more.</p>
+    </section>
+    <section class="main-section" id="Solving_common_CSS_problems">
+      <header>Solving common CSS problems</header>
+      <p>From the beginning, you'll primarily apply colors to HTML elements and their backgrounds; change the size, shape, and position of elements; and add and define borders on elements. But there's not much you can't do once you have a solid
+        understanding of even the basics of CSS. One of the best things about learning CSS is that once you know the fundamentals, usually you have a pretty good feel for what can and can't be done, even if you don't actually know how to do it yet!
+      </p>
+    </section>
+    <section class="main-section" id="CSS_Syntax">
+      <header>CSS Syntax</header>
+      <p>Using the CSS in the Webpage by the below following ways</p>
+      <ul>
+        <li>Inline CSS</li>
+        <li>External CSS files</li>
+        <li>Links under Head element</li>
+      </ul>
+      <h3> Inline CSS</h3>
+      <p class="sub-para"> CSS elements are used in the HTML tags directly to impose the styles.</p>
+      <pre>
+    <code>
+       &lt;h1 style="color:blue;"&gt;A Blue Heading&lt;/h1&gt;
+    </code>
+    </pre>
+      <p class="sub-para"> The above code makes the Heading in blue color.</p>
+      <h3> Internal CSS </h3>
+      <p class="sub-para">An internal CSS is used to define a style for a single HTML page.
+
+        An internal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element.</p>
+
+      <pre>
+    <code>
+    &lt;head&gt;
+    &lt;style&gt;
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+    &lt;/style&gt;
+    &lt;/head&gt;
+    </code>
+    </pre>
+
+      <h3> External CSS</h3>
+      <p class="sub-para">
+        An external style sheet is used to define the style for many HTML pages.</p>
+      <br>
+      <p class="sub-para">To use an external style sheet, add a link to it in the &lt;head&gt; section of each HTML page: </p>
+      <pre>
+    <code>
+      &lt;html&gt;
+      &lt;head&gt;
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;h1&gt;This is a heading&lt;/h1&gt;
+      &lt;p&gt;This is a paragraph.&lt;/p&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </code>
+    </pre>
+      <p class="sub-para">The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.</p>
+      <br>
+      <p class="sub-para">Here is how the "styles.css" file looks like:</p>
+      <pre>
+    <code>
+      body {
+        background-color: powderblue;
+      }
+      h1 {
+        color: blue;
+      }
+      p {
+        color: red;
+      }
+    </code>
+    </pre>
+      <h3> CSS Border </h3>
+      <p class="sub-para">The CSS border property defines a border around an HTML element. </p>
+      <br>
+      <p class="sub-para">Tip: You can define a border for nearly all HTML elements.</p>
+      <pre>
+    <code>
+       p {
+        border: 2px solid powderblue;
+      }
+    </code>
+    </pre>
+    </section>
+    <section class="main-section" id="See_also">
+      <header>See also</header>
+      <h3> CSS on MDN</h3>
+      <p class="sub-para">The main entry point for CSS documentation on MDN, where you'll find detailed reference documentation for all features of the CSS language. Want to know all the values a property can take? This is a good place to go.</p>
+
+    </section>
+  </main>
+</body>
+</html>
