@@ -17,7 +17,7 @@ nav li{
   padding: 0 25px;
 }
 .container-fluid{
-  padding: 70px 120px;
+  padding: 3% 15% 7%;
 }
 h1{
   font-family: 'Montserrat';
@@ -35,9 +35,21 @@ button{
 .dog-phone{
   width: 60%;
   transform: rotate(15deg);
+  position: absolute;
+}
+@media (max-width: 990px) {
+  #title{
+    text-align: center;
+  }
+  .dog-phone{
+    position: static;
+    transform: rotate(0deg);
+  }
 }
 #features{
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 .slides{
   text-align: center;
@@ -62,10 +74,12 @@ p{
 
 /* Testimonials */
 #testimonials{
-  padding: 5% 15%;
   text-align: center;
   background-color: #ef8172;
   color: white;
+}
+.carousel-inner{
+  padding: 5% 15%;
 }
 h2{
   font-size: 3rem;
@@ -74,7 +88,7 @@ h2{
 }
 .testimonial-img{
   border-radius: 70%;
-  width: 20%;
+  width: 15%;
   margin: 20px;
 }
 #press{
@@ -85,4 +99,30 @@ h2{
 .press-img{
   width: 15%;
   margin: 20px 20px 50px;
+}
+#pricing{
+  padding: 7% 15%;
+  text-align: center;
+}
+
+#cta{
+  padding: 7% 13%;
+  background-color: #ff4c68;
+  text-align: center;
+}
+.cta-h3{
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #fff;
+  padding-bottom: 20px;
+}
+#footer{
+  padding: 7% 15%;
+  background-color: #fff;
+  text-align: center;
+}
+.sn-contacts{
+  margin: 10px 10px;
 }
